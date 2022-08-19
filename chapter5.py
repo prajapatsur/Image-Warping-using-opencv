@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 img = cv2.imread('cards.webp')
 
-width,height = 225,350
+width,height = 225,350                                              #playing card is 3.5 inches long x 2.25 inches wide
 pts1 = np.float32([[580,247],[789,280],[542,548],[757,581]])        #we can find these all points by paints
 
 pts2 = np.float32([[0,0],[width,0],[0,height],[width,height]])      #these are the coordinates where we want our output
